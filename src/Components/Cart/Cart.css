@@ -1,0 +1,44 @@
+.cart-box {
+    padding: 1rem 1rem;
+    margin-top: 3rem;
+    background-color: #FFE0B3; 
+    border-radius: 0.5rem;
+    position: sticky;
+    top: 1rem;
+}
+
+.cart-box h2 {
+    margin-top: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.grand-total {
+    font-weight: 500;
+}
+.btn-box {
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+.btn-box button {
+    width: 100%;
+    border: none;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.clear-btn {
+    background-color: #FF3030;
+    
+}
+
+.review-btn {
+    background-color: #FF9900;
+    
+}
