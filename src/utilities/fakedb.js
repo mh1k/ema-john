@@ -14,7 +14,7 @@ const getCart=()=> {
 
 const addToDb = id => {
 
-    const shoppingCart = getCart()
+    const shoppingCart = getCart();  // ◀
     // add quantity
     const quantity = shoppingCart[id];
     if (quantity) {
@@ -30,7 +30,7 @@ const addToDb = id => {
 const removeFromDb = id => {
     const storedCart = localStorage.getItem('shopping-cart');
     if (storedCart) {
-        const shoppingCart = JSON.parse(storedCart);
+        const shoppingCart = JSON.parse(storedCart); 
         if (id in shoppingCart) {
             delete shoppingCart[id];
             localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
