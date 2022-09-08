@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../../images/Logo.svg'
 import './Navbar.css';
 
 const Navbar = () => {
+    const [scroll , setScroll] = useState(false)
+
+    window.onscroll = () => {
+        const nn = window.pageYOffset;
+        if (nn>0) {
+            setScroll(true)
+            // console.log(nn);
+        }
+        else {
+            setScroll(false)
+        }
+
+    }
+    
+
 
     return (
-        <div className='navbar'>
+        <div className={scroll ? 'navbar drop-shadow-[0px_0px_15px_rgba(0,0,0,0.80)]' : 'navbar '}>
             <div className='mx-[5%] nav'>
                 <Link className='ml-0 pl-0 ' to="/"><img src={logo} alt="" /></Link>
                 <div className='nav-link'>
